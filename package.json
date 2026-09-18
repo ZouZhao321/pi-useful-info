@@ -1,0 +1,36 @@
+{
+  "name": "pi-useful-info",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "显示实用信息的状态栏扩展",
+  "keywords": [
+    "pi-package",
+    "status-bar",
+    "footer"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "eslint": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "prettier": "^3.4.0"
+  }
+}
