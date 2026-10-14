@@ -24,7 +24,7 @@ To use a local checkout instead (development), install the directory itself:
 pi install ./useful-info
 ```
 
-`index.ts` is loaded by pi directly, so the extension needs no build step.
+`src/index.ts` is loaded by pi directly, so the extension needs no build step.
 
 ## What it does
 
