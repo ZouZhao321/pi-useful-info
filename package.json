@@ -1,6 +1,6 @@
 {
   "name": "pi-useful-info",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "description": "A status bar extension that displays useful information.",
   "license": "MIT",
