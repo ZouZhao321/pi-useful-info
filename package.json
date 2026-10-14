@@ -40,7 +40,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
-    "test": "node scripts/smoke.mjs"
+    "test": "node scripts/smoke.mjs",
+    "check:pack": "node scripts/check-pack.mjs"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
