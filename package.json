@@ -1,10 +1,12 @@
 {
   "name": "pi-useful-info",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "显示实用信息的状态栏扩展",
+  "description": "A status bar extension that displays useful information.",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "pi-package",
     "pi-extension",
@@ -41,7 +43,8 @@
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "test": "node scripts/smoke.mjs",
-    "check:pack": "node scripts/check-pack.mjs"
+    "check:pack": "node scripts/check-pack.mjs",
+    "prepublishOnly": "npm run typecheck && npm run lint && npm test && npm run format:check && npm run check:pack"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
