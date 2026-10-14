@@ -6,13 +6,19 @@ A status bar extension that replaces the footer with useful information about th
 
 ## Install
 
-Install this extension straight from the repository:
+Install from npm (recommended):
+
+```bash
+pi install npm:pi-useful-info
+```
+
+Alternatively, install straight from the repository:
 
 ```bash
 pi install git:github.com/ZouZhao321/pi-useful-info
 ```
 
-For local development, install the checkout by path:
+To use a local checkout instead (development), install the directory itself:
 
 ```bash
 pi install ./useful-info

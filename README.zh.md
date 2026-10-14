@@ -16,9 +16,22 @@
 
 ## 安装
 
+推荐从 npm 安装：
+
 ```bash
-cd ~/.pi/agent/extensions/useful-info
-npm install
+pi install npm:pi-useful-info
+```
+
+也可以直接从仓库安装：
+
+```bash
+pi install git:github.com/ZouZhao321/pi-useful-info
+```
+
+本地开发时改为按目录安装：
+
+```bash
+pi install ./useful-info
 ```
 
 ## 使用
