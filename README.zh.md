@@ -1,5 +1,7 @@
 # Pi Useful Info Extension
 
+[English](./README.md)
+
 显示实用信息的状态栏扩展，在终端底部显示当前工作状态。
 
 ## 功能
