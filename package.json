@@ -4,10 +4,30 @@
   "version": "1.0.0",
   "type": "module",
   "description": "显示实用信息的状态栏扩展",
+  "license": "MIT",
   "keywords": [
     "pi-package",
+    "pi-extension",
     "status-bar",
     "footer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZouZhao321/pi-useful-info.git"
+  },
+  "homepage": "https://github.com/ZouZhao321/pi-useful-info#readme",
+  "bugs": {
+    "url": "https://github.com/ZouZhao321/pi-useful-info/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
   ],
   "pi": {
     "extensions": [
@@ -19,13 +39,16 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/smoke.mjs"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
   },
   "devDependencies": {
-    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "^0.84.2",
+    "@earendil-works/pi-coding-agent": "^0.84.2",
+    "@earendil-works/pi-tui": "^0.84.2",
     "@types/node": "^22.0.0",
     "typescript": "^5.7.0",
     "eslint": "^9.0.0",
