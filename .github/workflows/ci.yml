@@ -36,6 +36,8 @@ jobs:
 
   commit-msg:
     runs-on: ubuntu-latest
+    # dependabot 生成的标题是英文，走不了 `type(scope): 中文描述` 约定，整体跳过该 job
+    if: github.actor != 'dependabot[bot]'
     steps:
       - uses: actions/checkout@v7
         with:
